@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        form {
+            cursor: pointer;
+        }
+
+        #btn {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background: #fff;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Septyni pasaulio stebuklai</h1>
+    <p>Septyni pasaulio stebuklai yra garsiausi statiniai, kurie yra pastatyti graikų, babiloniečių, egiptiečiai, persai.<br>Didžioji dalis statinių buvo sunaikinti visokiausiais būdais, skaitykite žemiau, kad rastumėte daugiau informacijos.</p>
+    <div id="btn">
+        <form action="pirmas.html">
+            <input type="submit" value="Cheopso piramidė">
+        </form>
+        <form action="antras.html">
+            <input type="submit" value="Kabantieji Babilono sodai">
+        </form>
+        <form action="trecias.html">
+            <input type="submit" value="Artemidės šventykla">
+        </form>
+    </div>
+    <div id="button">
+        <button>Switch color</button>
+        <script type="text/javascript">
+            var color = ["#222f3e", "#f368e0", "#ee5253", "#0abde3", "#10ac84"]
+            var i = 0;
+            document.querySelector("button").addEventListener("click", function() {
+                i = i < color.length ? ++i : 0;
+                document.querySelector("body").style.background = color[i]
+            })
+        </script>
+    </div>
+    <footer><br><br>2021 &copy; Nojus Kvederys</footer>
+
+</body></html>
